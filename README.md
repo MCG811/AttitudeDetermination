@@ -7,7 +7,6 @@ This repository contains a MATLAB-based software for analyzing and comparing dif
 ## 🛰️ Features
 - Simulated sensor data generation in free-noise and noisy scenarios (sun sensor, magnetometer and gyroscope)
 - Three operational conditions applied: nominal, reorientation and failure modes
-- Analysis of parameters such as time step and fading memory factor (this last one for REQUEST algorithm)
 - Implementation of classical and advanced attitude determination algorithms, including:
   - TRIAD (Three-Axis Attitude Determination)
   - QUEST (Quaternion Estimatior Algorithm)
@@ -16,6 +15,7 @@ This repository contains a MATLAB-based software for analyzing and comparing dif
   - Optimal REQUEST
   - Optimal TRIAD
   - Fusion algorithms
+- Analysis of parameters such as time step and fading memory factor (this last one for REQUEST algorithm)
 - Comparison of algorithm performance based on: efficiency, accuracy, precision and robusness
 - Visualization of attitude estimation results over time, including true and estimated Euler Angles and respective errors.
 
@@ -82,4 +82,4 @@ attitude-determination/
 3. Run the main script
 
 ## 👥 Contributors
-Maria Castellanos Gallardo - MCG811
+- [Maria Castellanos Gallardo](https://github.com/MCG811)
