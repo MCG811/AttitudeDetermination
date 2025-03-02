@@ -76,6 +76,10 @@ attitude-determination/
 │── README.md              # Project documentation
 ```
 
+## YouTube videos
+- [Satellite Attitude Determination with MATLAB | Interactive GUI Demonstration](https://youtu.be/zrsyzi90aA0)
+- [Satellite Attitude Determination with MATLAB | Step-by-Step Software Overview](https://youtu.be/piGuVyWjyy0)
+
 ## Installation
 1. Clone this repository.
 2. Open MATLAB and add the directory to the MATLAB path.
