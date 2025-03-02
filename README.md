@@ -1,22 +1,22 @@
 # AttitudeDetermination
-An in-depth analysis of the performance of advanced attitude determination algorithms for small satellites
+An in-depth analysis of the performance of advanced attitude determination algorithms for small satellites.
 
 ## Introduction
 This repository contains a MATLAB-based software for analyzing and comparing different **attitude determination algorithms** used in small satellite applications. The project is part of a university thesis focusing on evaluating and optimizing attitude estimation techniques.
 
 ## Features
-- Simulated sensor data generation in free-noise and noisy scenarios (sun sensor, magnetometer and gyroscope)
-- Three operational conditions applied: nominal, reorientation and failure modes
+- Simulated sensor data generation in free-noise and noisy scenarios (sun sensor, magnetometer and gyroscope).
+- Three operational conditions applied: nominal, reorientation and failure modes.
 - Implementation of classical and advanced attitude determination algorithms, including:
-  - TRIAD (Three-Axis Attitude Determination)
-  - QUEST (Quaternion Estimatior Algorithm)
-  - REQUEST (Recursive Quaternion Estimator Algorithm)
-  - EKF (Extended Kalman Filter)
-  - Optimal REQUEST
-  - Optimal TRIAD
-  - Fusion algorithms
-- Analysis of parameters such as time step and fading memory factor (this last one for REQUEST algorithm)
-- Comparison of algorithm performance based on: efficiency, accuracy, precision and robusness
+  - TRIAD (Three-Axis Attitude Determination).
+  - QUEST (Quaternion Estimatior Algorithm).
+  - REQUEST (Recursive Quaternion Estimator Algorithm).
+  - EKF (Extended Kalman Filter).
+  - Optimal REQUEST.
+  - Optimal TRIAD.
+  - Fusion algorithms.
+- Analysis of parameters such as time step and fading memory factor (this last one for REQUEST algorithm).
+- Comparison of algorithm performance based on: efficiency, accuracy, precision and robusness.
 - Visualization of attitude estimation results over time, including true and estimated Euler Angles and respective errors.
 
 ## Project structure
@@ -77,9 +77,9 @@ attitude-determination/
 ```
 
 ## Installation
-1. Clone this repository
-2. Open MATLAB and add the directory to the MATLAB path
-3. Run the main script
+1. Clone this repository.
+2. Open MATLAB and add the directory to the MATLAB path.
+3. Run the main script.
 
 ## Contributors
 - [Maria Castellanos Gallardo](https://github.com/MCG811)
