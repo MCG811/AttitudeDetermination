@@ -16,7 +16,7 @@ This repository contains a MATLAB-based software for analyzing and comparing dif
   - Optimal TRIAD.
   - Fusion algorithms.
 - Analysis of parameters such as time step and fading memory factor (this last one for REQUEST algorithm).
-- Comparison of algorithm performance based on: efficiency, accuracy, precision and robusness.
+- Comparison of algorithm performance based on: efficiency, accuracy, precision, and robustness.
 - Visualization of attitude estimation results over time, including true and estimated Euler Angles and respective errors.
 
 ## Project structure
