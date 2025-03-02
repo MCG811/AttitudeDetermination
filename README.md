@@ -22,49 +22,58 @@ This repository contains a MATLAB-based software for analyzing and comparing dif
 ## 📁 Project structure
 ```plaintext
 attitude-determination/
-│── AttitudeSoftware/         # MATLAB source code for attitude estimation
-│   │── GUI_main.m            # Main script to execute
-│   │── Algorithms/               #
-│   │   |── EKF.m
-│   │   |── OptREQUEST.m
-│   │   |── QUEST.m
-│   │   |── REQUEST.m
-│   │   |── TRIAD.m
-│   │── Analysis/       
-│   │   |── algorithm_analysis.m
-│   │   |── fadingMemory_analysis.m
-│   │   |── timeStep_analysis.m
-│   │── Classes/
-│   │   |── AttitudeAlgorithm.m
-│   │   |── EKF_Algorithm.m
-│   │   |── Merged_Algorithm.m
-│   │   |── OptRequest_Algorithm.m
-│   │   |── OptTriad_Algorithm.m
-│   │   |── Quest_Algorithm.m
-│   │   |── Request_Algorithm.m
-│   │   |── Satellite.m
-│   │   |── Triad_Algoirthm.m        
-│   │── Data/
-│   │   |── Table1.xlsx # Nominal Operations
-│   │   |── Table2.xlsx # Reorientation Operations     
-│   │── ExcelResults               # To save excel results
-│   │── Figures               # To save figures
-│   │── Functions               # Utility functions
-│   │   |── attitudeParameters.m
-│   │   |── calculateErrors.m
-│   │   |── extract_ypr_matrix.m
-│   │   |── gyroMeasure.m
-│   │   |── plotResults.m
-│   │   |── savePlot.m
-│   │   |── saveToExcel.m
-│   │── GUIfunctions
-│   │── Scripts
-│   │   |── algorithmsStudy.m
-│   │   |── casesStudy_dt.m
-│   │   |── casesStudy_memory.m
-│   │── Validation               # Utility functions
-│── README.md                 # Project documentation
-│── LICENSE                   # License file
+│── AttitudeSoftware/            # Main MATLAB source code directory
+│   │── GUI_main.m               # Main script to run the graphical user interface (GUI)
+│   │
+│   ├── Algorithms/              # Implementation of attitude determination algorithms
+│   │   │── EKF.m                # Extended Kalman Filter algorithm
+│   │   │── OptREQUEST.m         # Optimized REQUEST algorithm
+│   │   │── QUEST.m              # Quaternion Estimator algorithm
+│   │   │── REQUEST.m            # Recursive Quaternion Estimator algorithm
+│   │   │── TRIAD.m              # Three-Axis Attitude Determination algorihtm
+│   │
+│   ├── Analysis/                # Functions for evaluating performance and parameter analysis
+│   │   │── algorithm_analysis.m       # Compares performance of different algorithms
+│   │   │── fadingMemory_analysis.m    # Analyzes the effect of the fading memory factor
+│   │   │── timeStep_analysis.m        # Examines the impact of time step variations
+│   │
+│   ├── Classes/                 # Object-oriented MATLAB classes for modular algorithm implementation
+│   │   │── AttitudeAlgorithm.m       # Base class for attitude algorithms
+│   │   │── EKF_Algorithm.m           # EKF class 
+│   │   │── Merged_Algorithm.m        # Fusion algorithms class
+│   │   │── OptRequest_Algorithm.m    # Optimized REQUEST class
+│   │   │── OptTriad_Algorithm.m      # Optimized TRIAD class
+│   │   │── Quest_Algorithm.m         # QUEST class
+│   │   │── Request_Algorithm.m       # REQUEST class
+│   │   │── Satellite.m               # Class representing satellite properties and dynamics
+│   │   │── Triad_Algorithm.m         # TRIAD class
+│   │
+│   ├── Data/                   # Data files for simulation scenarios
+│   │   │── Table1.xlsx          # Nominal operations dataset
+│   │   │── Table2.xlsx          # Reorientation operations dataset
+│   │
+│   ├── ExcelResults/            # Directory for storing Excel output results
+│   ├── Figures/                 # Directory for storing plots and visualization results
+│   │
+│   ├── Functions/               # Utility functions used throughout the project
+│   │   │── attitudeParameters.m    # Computes attitude-related parameters
+│   │   │── calculateErrors.m       # Calculates attitude estimation errors
+│   │   │── extract_ypr_matrix.m    # Extracts yaw, pitch, and roll angles from Data directory
+│   │   │── gyroMeasure.m           # Simulates gyroscope measurements
+│   │   │── plotResults.m           # Plots attitude estimation results
+│   │   │── savePlot.m              # Saves generated plots to the Figures directory
+│   │   │── saveToExcel.m           # Saves numerical results to ExcelResults directory (Excel files)
+│   │
+│   ├── GUIfunctions/            # Functions related to graphical user interface implementation
+│   │
+│   ├── Scripts/                 # Scripts for executing different simulation and analysis cases
+│   │   │── algorithmsStudy.m       # Runs a complete study on attitude determination algorithms
+│   │   │── casesStudy_dt.m         # Studies the effect of different time steps
+│   │   │── casesStudy_memory.m     # Evaluates memory factor impact on algorithms
+│   │
+│   ├── Validation/              # Scripts for validating correct implementation
+│
+│── README.md                    # Project documentation
 ```
 
 ## 🔧 Installation
@@ -73,4 +82,4 @@ attitude-determination/
 3. Run the main script
 
 ## 👥 Contributors
-Maria Castellanos Gallardo - 
+Maria Castellanos Gallardo - MCG811
